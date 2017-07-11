@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="Window 设置对话框等宽，位于屏幕底部123456Window window = getWindow();WindowManager.LayoutParams params = window.getAttributes();params.height = RelativeLayout.LayoutParams.WRAP_CONTENT;params.width = RelativeLayout">
+<meta name="description" content="Window 设置对话框等宽，位于屏幕底部 123456Window window = getWindow();WindowManager.LayoutParams params = window.getAttributes();params.height = RelativeLayout.LayoutParams.WRAP_CONTENT;params.width = RelativeLayou">
 <meta property="og:type" content="article">
 <meta property="og:title" content="android ui">
 <meta property="og:url" content="http://yoursite.com/2017/06/26/android-ui/index.html">
 <meta property="og:site_name" content="梦想变成大海的水洼">
-<meta property="og:description" content="Window 设置对话框等宽，位于屏幕底部123456Window window = getWindow();WindowManager.LayoutParams params = window.getAttributes();params.height = RelativeLayout.LayoutParams.WRAP_CONTENT;params.width = RelativeLayout">
-<meta property="og:updated_time" content="2017-06-26T02:43:04.000Z">
+<meta property="og:description" content="Window 设置对话框等宽，位于屏幕底部 123456Window window = getWindow();WindowManager.LayoutParams params = window.getAttributes();params.height = RelativeLayout.LayoutParams.WRAP_CONTENT;params.width = RelativeLayou">
+<meta property="og:updated_time" content="2017-07-11T08:53:33.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="android ui">
-<meta name="twitter:description" content="Window 设置对话框等宽，位于屏幕底部123456Window window = getWindow();WindowManager.LayoutParams params = window.getAttributes();params.height = RelativeLayout.LayoutParams.WRAP_CONTENT;params.width = RelativeLayout">
+<meta name="twitter:description" content="Window 设置对话框等宽，位于屏幕底部 123456Window window = getWindow();WindowManager.LayoutParams params = window.getAttributes();params.height = RelativeLayout.LayoutParams.WRAP_CONTENT;params.width = RelativeLayou">
 
 
 
@@ -332,9 +332,17 @@
 
       
         <h3 id="Window"><a href="#Window" class="headerlink" title="Window"></a>Window</h3><ol>
-<li>设置对话框等宽，位于屏幕底部<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Window window = getWindow();</div><div class="line">WindowManager.LayoutParams params = window.getAttributes();</div><div class="line">params.height = RelativeLayout.LayoutParams.WRAP_CONTENT;</div><div class="line">params.width = RelativeLayout.LayoutParams.MATCH_PARENTS;</div><div class="line">window.setAttributes(params);</div><div class="line">window.setGravity(Gravity.BOTTOM);</div></pre></td></tr></table></figure>
+<li><p>设置对话框等宽，位于屏幕底部</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">Window window = getWindow();</div><div class="line">WindowManager.LayoutParams params = window.getAttributes();</div><div class="line">params.height = RelativeLayout.LayoutParams.WRAP_CONTENT;</div><div class="line">params.width = RelativeLayout.LayoutParams.MATCH_PARENTS;</div><div class="line">window.setAttributes(params);</div><div class="line">window.setGravity(Gravity.BOTTOM);</div></pre></td></tr></table></figure>
+</li>
+<li><p>设置listview分割线</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">android:divider=<span class="string">"@color/greylinesetting"</span></div><div class="line">android:dividerHeight=<span class="string">"1dp"</span></div><div class="line">android:headerDividersEnabled=<span class="string">"false"</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>activity设置为</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">android:theme=<span class="string">"@android:style/Theme.NoTitileBar.FullScreen"</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
+<p>出现Error inflating <unknown><br>通过动态设置activity全屏幕能解决<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">getWindow().getDectorView.setSystemUiVisible(View.SYSTEM_UI_FLAG_FULLSCREEN)</div></pre></td></tr></table></figure></unknown></p>
 
       
     </div>
@@ -380,6 +388,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/07/06/android-tips/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -451,7 +463,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">8</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
